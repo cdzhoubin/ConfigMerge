@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ConfigMerge.Services.Core;
+using System;
 using System.Collections.Generic;
-using ConfigMerge.Core;
 
 namespace ConfigMerge.UnitTesting.Core.Lang
 {

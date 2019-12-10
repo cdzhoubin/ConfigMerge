@@ -1,8 +1,8 @@
 ﻿using System.IO;
-using ConfigMerge.Core;
-using ConfigMerge.Core.Lang;
+using ConfigMerge.Services.Core;
+using ConfigMerge.Services.Core.Lang;
 
-namespace ConfigMerge.Options
+namespace ConfigMerge.Services.Options
 {
     public static class RecipeSource
     {

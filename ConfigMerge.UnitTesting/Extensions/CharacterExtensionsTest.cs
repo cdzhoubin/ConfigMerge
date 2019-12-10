@@ -1,4 +1,4 @@
-﻿using ConfigMerge.Core.Lang;
+﻿using ConfigMerge.Services.Core.Lang;
 using NUnit.Framework;
 
 namespace ConfigMerge.UnitTesting.Extensions

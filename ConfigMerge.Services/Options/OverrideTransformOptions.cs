@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Linq;
-using ConfigMerge.Common;
-using ConfigMerge.Logging;
+using ConfigMerge.Services.Common;
+using ConfigMerge.Services.Logging;
 using static System.Configuration.ConfigurationManager;
 
-namespace ConfigMerge.Options
+namespace ConfigMerge.Services.Services.Options
 {
     public class OverrideTransformOptions
     {

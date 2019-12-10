@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using ConfigMerge.Core;
-using ConfigMerge.Core.Lang;
+using ConfigMerge.Services.Core;
+using ConfigMerge.Services.Core.Lang;
 using FakeItEasy;
 using NUnit.Framework;
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
-using ConfigMerge.Core.Formatting;
+using ConfigMerge.Services.Core.Formatting;
 using NUnit.Framework;
 
 namespace ConfigMerge.UnitTesting.Misc

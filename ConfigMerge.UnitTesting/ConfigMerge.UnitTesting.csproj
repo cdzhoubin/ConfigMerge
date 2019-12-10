@@ -61,12 +61,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConfigMerge\ConfigMerge.csproj">
-      <Project>{DB2163E5-730A-478F-A75A-05A11D10AEF4}</Project>
-      <Name>ConfigMerge</Name>
+    <ProjectReference Include="..\ConfigMerge.Services\ConfigMerge.Services.csproj">
+      <Project>{352f489f-4e1e-46c1-ba90-0871def94e22}</Project>
+      <Name>ConfigMerge.Services</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

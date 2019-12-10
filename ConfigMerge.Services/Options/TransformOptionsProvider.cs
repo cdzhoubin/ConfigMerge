@@ -1,6 +1,7 @@
-﻿using ConfigMerge.Core.Merging;
+﻿using ConfigMerge.Services.Core.Merging;
+using ConfigMerge.Services.Services.Options;
 
-namespace ConfigMerge.Options
+namespace ConfigMerge.Services.Options
 {
     public class TransformOptionsProvider
     {

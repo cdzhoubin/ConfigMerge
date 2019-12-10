@@ -1,7 +1,7 @@
-﻿using System;
+﻿using ConfigMerge.Services.Core.IO;
+using ConfigMerge.Services.Core.Merging;
+using System;
 using System.IO;
-using ConfigMerge.Core.IO;
-using ConfigMerge.Core.Merging;
 
 namespace ConfigMerge.IntegrationTesting
 {

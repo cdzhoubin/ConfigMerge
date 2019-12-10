@@ -53,12 +53,6 @@
     <Compile Include="TestData.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConfigMerge\ConfigMerge.csproj">
-      <Project>{db2163e5-730a-478f-a75a-05a11d10aef4}</Project>
-      <Name>ConfigMerge</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="App.config.recipe" />
     <None Include="Inputs\App.assemblybinding.override.config">
@@ -76,6 +70,12 @@
     <Content Include="Inputs\App.root.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConfigMerge.Services\ConfigMerge.Services.csproj">
+      <Project>{352f489f-4e1e-46c1-ba90-0871def94e22}</Project>
+      <Name>ConfigMerge.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

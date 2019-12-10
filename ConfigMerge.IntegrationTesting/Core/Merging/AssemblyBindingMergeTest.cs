@@ -1,5 +1,6 @@
 ﻿using System.Xml.XPath;
 using ConfigMerge.Core.Merging;
+using ConfigMerge.Services.Core.Merging;
 using NUnit.Framework;
 
 namespace ConfigMerge.IntegrationTesting.Core.Merging

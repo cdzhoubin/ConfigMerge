@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Text;
 using ConfigMerge.ConsoleArguments;
-using ConfigMerge.Core;
-using ConfigMerge.Core.Lang;
-using ConfigMerge.Logging;
+using ConfigMerge.Services.Core.Lang;
 using ConfigMerge.Meta;
-using ConfigMerge.Options;
+using ConfigMerge.Services;
 
 namespace ConfigMerge
 {
@@ -22,11 +20,7 @@ namespace ConfigMerge
             try
             {
                 var arguments = args.To<MergeArgs>();
-                Logger.Level = arguments.L;
-                var source = RecipeSource.FromFileOrInput(arguments.Recipe);
-                var recipe = new RecipeParser(source).Recipe;
-                var options = TransformOptionsProvider.GetTransformOptions();
-                recipe.Compile()(new ConfigTransformer(source.BasePath, options));
+                ConfigMergeTools.Merge(arguments.Recipe, arguments.L);
                 return ErrorCodes.Ok;
             }
             catch (RecipeCompilerException ex)

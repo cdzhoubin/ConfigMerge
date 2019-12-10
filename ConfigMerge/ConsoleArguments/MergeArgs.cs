@@ -1,4 +1,4 @@
-﻿using ConfigMerge.Logging;
+﻿using ConfigMerge.Services.Logging;
 
 namespace ConfigMerge.ConsoleArguments
 {
