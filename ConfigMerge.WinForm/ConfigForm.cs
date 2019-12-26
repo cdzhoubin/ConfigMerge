@@ -79,7 +79,7 @@ namespace ConfigMerge.WinForm
                 MessageBox.Show(result, "错误");
                 return;
             }
-            MessageBox.Show(result);
+            MessageBox.Show("保存成功");
             DialogResult = DialogResult.OK;
         }
 

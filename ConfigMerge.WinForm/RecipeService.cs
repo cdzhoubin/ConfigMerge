@@ -58,7 +58,16 @@ namespace ConfigMerge.WinForm
                 return new RecipeConfigList();
             }
         }
-
+        public void Delete(Guid id)
+        {
+            var list = Get();
+            var entity = list.FirstOrDefault(p => p.Id == id);
+            if(entity != null)
+            {
+                list.Remove(entity);
+                SaveData(list);
+            }
+        }
         public RecipeConfigEntity Get(Guid id)
         {
             return Get().Where(p => p.Id == id).FirstOrDefault();
@@ -66,7 +75,6 @@ namespace ConfigMerge.WinForm
 
         public string Merge(RecipeConfigEntity entity)
         {
-
             FileInfo fi = new FileInfo(entity.OutputConfigFile);
             DirectoryInfo di = new DirectoryInfo(entity.InputConfigFolder);
             if (!di.Exists)

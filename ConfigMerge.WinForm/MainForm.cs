@@ -92,6 +92,11 @@ namespace ConfigMerge.WinForm
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            if(MessageBox.Show("确认删除当前选中的记录？","提示",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                service.Delete(entity.Id);
+                LoadData();
+            }
         }
 
         private void btnExcute_Click(object sender, EventArgs e)
